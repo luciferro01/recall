@@ -29,7 +29,7 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   # system_tray: ^0.1.1
-  # tray_manager: ^0.3.1
+  tray_manager: ^0.3.1
 
 dev_dependencies:
   flutter_test:
@@ -42,3 +42,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/icons/3d_clipboard_icon.png
+    - assets/icon.png
