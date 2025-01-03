@@ -8,7 +8,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'background_service.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 BackgroundService backgroundService(Ref ref) {
   return BackgroundService(ref);
 }
@@ -17,7 +17,7 @@ class BackgroundService {
   final Ref _ref;
   Timer? _pollingTimer;
   String? _lastCopiedText;
-  bool _isPrivateMode = false;
+  final bool _isPrivateMode = false;
 
   BackgroundService(this._ref) {
     _startPolling();
